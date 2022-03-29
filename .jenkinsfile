@@ -18,7 +18,7 @@ steps
 
 {
 
-bat "mvn clean"
+mvn clean
 
 }
 
@@ -32,7 +32,6 @@ stage('deploy')
 
 steps{
 
-echo 'deploying the code'
 
 }
 
@@ -46,7 +45,7 @@ stage('test')
 
 steps{
 
-bat "mvn test"
+mvn test
 
 }
 
@@ -77,8 +76,6 @@ stage('Release')
 
 
 steps{
-
-echo 'releasing the project'
 
 }
 
