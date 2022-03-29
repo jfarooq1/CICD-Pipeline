@@ -22,22 +22,9 @@ mvn clean
 
 }
 
-
-
-}
-
-stage('deploy')
-
-{
-
-steps{
-
-
 }
 
 
-
-}
 
 stage('test')
 
@@ -48,49 +35,10 @@ steps{
 mvn test
 
 }
-
-
-
-}
-
-
-
-stage('Unit Testing')
-
-{
-
-steps{
-
-bat "mvn compile"
-
 }
 
 
 
 }
-
-stage('Release')
-
-{
-
-
-
-steps{
-
-}
-
-
-
-}
-
-
-
-
-
-
-
-}
-
-
 
 }
